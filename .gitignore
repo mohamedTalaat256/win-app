@@ -35,4 +35,4 @@ build/
 
 ### react ###
 /frontend/admin/node_modules
-/frontend/user/node_modules
+/frontend/user_app/node_modules
