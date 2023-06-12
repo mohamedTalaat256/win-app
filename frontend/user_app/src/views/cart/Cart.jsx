@@ -125,7 +125,7 @@ export default function Cart() {
                                       /*   <Payment order_details={{ total: cartTotal }} /> */
                                       <Stripe
                                       ComponentClass=''
-                                          stripeKey="pk_test_51LYUvnBVDibabXHisH0GvAI2H39DwKOoMLKVVVTNvqu4niaeCnMpQdJVkGQlPrOpDqjn6n6JBUpZt6tpr8swrH4u00IWn8PtCa"
+                                          stripeKey="pk_test_*************************"
                                           token={handleToken}
                                       />
                                         }
