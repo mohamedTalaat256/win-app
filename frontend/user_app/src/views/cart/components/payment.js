@@ -7,7 +7,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import axiosClient from "../../../axios-client";
 import { CircularProgress, Stack, Typography } from "@mui/material";
 function Payment({order_details }) {
-  const [stripePromise, setStripePromise] = useState(loadStripe("pk_test_51LYUvnBVDibabXHisH0GvAI2H39DwKOoMLKVVVTNvqu4niaeCnMpQdJVkGQlPrOpDqjn6n6JBUpZt6tpr8swrH4u00IWn8PtCa"));
+  const [stripePromise, setStripePromise] = useState(loadStripe("pk_test_****"));
   const [clientSecret, setClientSecret] = useState("");
   const [loading, setLoading] = useState(false);
 
