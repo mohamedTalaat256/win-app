@@ -10,9 +10,10 @@ e-commerce application using react js as frontend and spring boot as backend, co
 ##### 1- login and register
 ##### 2- shopping cart
 ##### 3- products reviews
-##### 4- make orders
-##### 5- light and dark theme
-##### 6- different roles
+##### 4- filter products
+##### 5- make orders
+##### 6- light and dark theme
+##### 7- different roles
 
 ### Admin App Features
 ##### 1- login
