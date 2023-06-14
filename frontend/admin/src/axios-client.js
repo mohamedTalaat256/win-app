@@ -2,7 +2,7 @@
 import axios from "axios";
 import baseUrl from "../src/baseUrl";
 
-const appUrl = baseUrl+'/api/v1/';
+const appUrl = baseUrl+'/api/v1/admin/';
 const axiosClient = axios .create({
   baseURL: appUrl,
   headers: {

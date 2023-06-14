@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/products")
+@RequestMapping("/api/v1/admin/products")
 @Transactional
 
 public class ProductController {
@@ -34,11 +34,11 @@ public class ProductController {
 
 
     @GetMapping("")
-    public ResponseEntity<Object> findAll(){
+    public ResponseEntity<Object> findAll(@RequestParam int pageNum, @RequestParam int pageSize){
 
 
-        List<Product> products = productService.findAll();
-        return AppResponse.generateResponse("Success", HttpStatus.OK, products, true);
+      //  List<Product> products = productService.findAll();
+        return AppResponse.generateResponse("Success", HttpStatus.OK, productService.findAll(pageNum, pageSize), true);
 
     }
 

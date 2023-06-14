@@ -1,16 +1,9 @@
-package com.mido.auth.controller;
+package com.mido.auth.controller.user;
 
 
-import com.mido.auth.DTO.InsertProductDto;
-import com.mido.auth.DTO.UpdateProductDto;
 import com.mido.auth.entity.Cart;
-import com.mido.auth.entity.Product;
-import com.mido.auth.entity.ProductSpecification;
 import com.mido.auth.services.CartService;
-import com.mido.auth.services.ProductService;
-import com.mido.auth.services.SpecificationService;
 import com.mido.auth.utilis.AppResponse;
-import com.mido.auth.utilis.Utils;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,13 +11,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/api/v1/carts")
 @Transactional
 
-public class CartController {
+public class UserCartController {
 
     @Autowired
     private CartService cartService;

@@ -8,12 +8,9 @@ import imagesUrl from "../imagesUrl";
 export default function ProductCard(props) {
     const backgroundImage = imagesUrl+ props.props.images;
     return (
-        <>
             <Card elevation={1} sx={{ maxWidth: '100%', padding: 2, margin: 2, borderRadius: 2 }} key={props.props.id}>
 
-
-
-                <CardActions disableSpacing sx={{ padding: 0, marginY: 1 }} width={'100%'}>
+                <CardActions disableSpacing sx={{ padding: 0, marginY: 0 }} width={'100%'}>
 
                     <Box sx={{ backgroundColor: '#D23F57', paddingX: 2, borderRadius: 10, paddingY: 0 }} >
                         <Typography variant="subtitle2" color={'white'}>
@@ -70,7 +67,6 @@ export default function ProductCard(props) {
                 </CardActions>
 
             </Card>
-        </>
     )
 
 }

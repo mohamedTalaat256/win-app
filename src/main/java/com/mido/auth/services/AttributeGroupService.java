@@ -20,8 +20,9 @@ public class AttributeGroupService {
         return attributeGroupRepo.save(attributeGroup);
     }
 
-    public List<AttributeGroup> findByCategoryId(Long categoryId){
 
+    /****************************user   *******************/
+    public List<AttributeGroup> findByCategoryId(Long categoryId){
         return attributeGroupRepo.findByCategory(categoryId);
     }
 }

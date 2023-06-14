@@ -1,9 +1,7 @@
-package com.mido.auth.controller;
+package com.mido.auth.controller.user;
 
 
-import com.mido.auth.entity.Cart;
 import com.mido.auth.entity.Review;
-import com.mido.auth.services.CartService;
 import com.mido.auth.services.ReviewService;
 import com.mido.auth.utilis.AppResponse;
 import jakarta.validation.Valid;
@@ -17,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/reviews")
 @Transactional
 
-public class ReviewController {
+public class UserReviewController {
 
     @Autowired
     private ReviewService reviewService;
